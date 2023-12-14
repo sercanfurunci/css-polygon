@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+    <style>
+      .container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .triangle {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+      .square {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+      .pentagon {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+
+        clip-path: polygon(50% 0%, 100% 35%, 75% 100%, 25% 100%, 0% 35%);
+      }
+      .hexagon {
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
+        );
+      }
+      .heptagon {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 40%,
+          85% 85%,
+          50% 100%,
+          15% 85%,
+          0% 40%
+        );
+      }
+      .octagon {
+        background-color: brown;
+        width: 200px;
+        height: 200px;
+
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 25%,
+          100% 75%,
+          75% 100%,
+          25% 100%,
+          0% 75%,
+          0% 25%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="triangle"></div>
+      <div class="square"></div>
+      <div class="pentagon"></div>
+      <div class="hexagon"></div>
+      <div class="heptagon"></div>
+      <div class="octagon"></div>
+    </div>
+  </body>
+</html>
